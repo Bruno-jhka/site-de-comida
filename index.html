@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodBox</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="pop-up-refri.js">
+
+    <script>
+
+/*script que abre e fecha o popup refri 350 ml e anima a abertura*/
+function abrir1(){
+    if(document.getElementById('popUPrefri1').style.display == "none"){
+        document.getElementById('popUPrefri1').style.display = "block", document.getElementById('popUPrefri1').style.animation = "popup1 1.5s"}else{
+          document.getElementById('popUPrefri1').style.display = 'none'
+    }  
+        }
+
+
+/*script que fecha o popup refri 350ml pelo botão fechar*/
+function fechar1(){
+    document.getElementById('popUPrefri1').style.display = 'none'
+}
+
+
+
+
+
+
+/*script que abre e fecha o popup refri 2l e anima a abertura*/
+function abrir2(){
+    if(document.getElementById("popUPrefri2").style.display == "none"){
+        document.getElementById("popUPrefri2").style.display = "block", document.getElementById('popUPrefri2').style.animation = "popup1 1.5s"}else{
+            document.getElementById("popUPrefri2").style.display = "none"
+        }
+}
+
+/*script que fecha o popup refri 2l pelo botão fechar */
+function fechar2(){
+			document.getElementById("popUPrefri2").style.display = "none"
+		}
+
+/*↓script que seleciona o hamburguer↓*/
+function escolhe_hamb(){
+    if(document.getElementsByClassName('hamburguer')[0].style.border == 'none'){
+        document.getElementsByClassName('hamburguer')[0].style.border ='rgb(254, 36, 36) 5px solid'
+    }else{
+        document.getElementsByClassName('hamburguer')[0].style.border = 'none'
+    }
+}
+function escolhe_hamb1(){
+    document.getElementsByClassName('hamburguer')[0].style.boxShadow = '0px 0px 0px 5px rgb(254, 36, 36)'
+   
+}
+function escolhe_hamb2(){
+    document.getElementsByClassName('hamburguer')[0].style.boxShadow = '3px 3px 5px rgba(0, 0, 0, 0.608)'  
+}
+/*↑script que seleciona o hamburguer↑*/
+
+
+/*↓script que seleciona o xburguer↓*/
+function escolhe_xburg(){
+    if(document.getElementsByClassName('xburguer')[0].style.border == 'none'){
+        document.getElementsByClassName('xburguer')[0].style.border ='rgb(254, 36, 36) 5px solid'
+    }else{
+        document.getElementsByClassName('xburguer')[0].style.border = 'none'
+    }
+}
+function escolhe_xburg1(){
+    document.getElementsByClassName('xburguer')[0].style.boxShadow = '0px 0px 0px 5px rgb(254, 36, 36)'
+   
+}
+function escolhe_xburg2(){
+    document.getElementsByClassName('xburguer')[0].style.boxShadow = '3px 3px 5px rgba(0, 0, 0, 0.608)'  
+}
+/*↑script que seleciona o xburguer↑*/
+
+
+/*↓script que seleciona o xegg↓*/
+function escolhe_xegg(){
+    if(document.getElementsByClassName('xegg')[0].style.border == 'none'){
+        document.getElementsByClassName('xegg')[0].style.border ='rgb(254, 36, 36) 5px solid'
+    }else{
+        document.getElementsByClassName('xegg')[0].style.border = 'none'
+    }
+}
+function escolhe_xegg1(){
+    document.getElementsByClassName('xegg')[0].style.boxShadow = '0px 0px 0px 5px rgb(254, 36, 36)'
+   
+}
+function escolhe_xegg2(){
+    document.getElementsByClassName('xegg')[0].style.boxShadow = '3px 3px 5px rgba(0, 0, 0, 0.608)'  
+}
+/*↑script que seleciona o xegg↑*/
+
+
+/*↓script que seleciona o xeggbacon↓*/
+function escolhe_xeggbac(){
+    if(document.getElementsByClassName('xeggbacon')[0].style.border == 'none'){
+        document.getElementsByClassName('xeggbacon')[0].style.border ='rgb(254, 36, 36) 5px solid'
+    }else{
+        document.getElementsByClassName('xeggbacon')[0].style.border = 'none'
+    }
+}
+function escolhe_xeggbac1(){
+    document.getElementsByClassName('xeggbacon')[0].style.boxShadow = '0px 0px 0px 5px rgb(254, 36, 36)'
+   
+}
+function escolhe_xeggbac2(){
+    document.getElementsByClassName('xeggbacon')[0].style.boxShadow = '3px 3px 5px rgba(0, 0, 0, 0.608)'  
+}
+/*↑script que seleciona o xeggbacon↑*/
+
+    </script>
+
+
+
+</head>
+<body>
+    <!--div do titulo-->
+    <div id="titulo">
+        <h1>F<span>oo</span>dBox</h1>
+        <h2>Peça o melhor lanche da cidade</h2>
+    </div>
+
+    <!--div dos produtos-->
+    <div>
+
+        <!--subtitulo do lanche-->
+        <h2>Primeiro, seu lanche</h2>
+
+        <!--div hamburguer-->
+        <div id="lanche" class="hamburguer" onclick="escolhe_hamb()" onmouseenter="escolhe_hamb1()" onmouseleave="escolhe_hamb2()">
+            <img src="/FoodBox_2/Nova pasta/hamburguer.png" alt="">
+            <h3>Hamburguer</h3>
+            <p>pão, alface, tomate, hambúrguer 100g. </p>
+            <p id="preço">R$11,90</p>
+            
+        </div>
+
+        <!--div xburguer-->
+        <div id="lanche" class="xburguer" onclick="escolhe_xburg()" onmouseenter="escolhe_xburg1()" onmouseleave="escolhe_xburg2()">
+            <img src="/FoodBox_2/Nova pasta (2)/xburguer.png" alt="">
+            <h3>Xburguer</h3>
+            <p>pão, alface, tomate, presunto,mussarela, hambúrguer 100g. </p>
+            <p id="preço">R$13,90</p>
+            
+        </div>
+
+        <!--div xeg-->
+        <div id="lanche" class="xegg" onclick="escolhe_xegg()" onmouseenter="escolhe_xegg1()" onmouseleave="escolhe_xegg2()">
+            <img src="/FoodBox_2/Nova pasta (2)/xegg.png" alt="">
+            <h3>Xegg</h3>
+            <p>pão, alface, tomate, presunto,mussarela, ovo, hambúrguer 100g.</p>
+            <p id="preço">R$15,90</p>
+            
+        </div>
+
+        <!--div xeggbacon-->
+        <div id="lanche" class="xeggbacon" onclick="escolhe_xeggbac()" onmouseenter="escolhe_xeggbac1()" onmouseleave="escolhe_xeggbac2()">
+            <img src="/FoodBox_2/Nova pasta (2)/xeggbacon.png" alt="">
+            <h3>Xeggbacon</h3>
+            <p>pão, alface, tomate, presunto,mussarela, ovo, bacon, hambúrguer 100g.</p>
+            <p id="preço">R$17,90</p>
+           
+            
+        </div>
+
+        <!--subtitulo da bebida-->
+        <h2>Agora sua bebida</h2>
+
+        <!--div refrigerante lata-->
+        <a href="javascript: abrir1();">
+            <div id="bebida">
+                <img src="/FoodBox_2/Nova pasta (2)/refrilata.png" alt="">
+                <h3>Refrigerantes 350ml</h3>
+                <p> refrigerante 350ml, gelado <span id="gelo">&#X2744;</span></p>
+                <p id="preço">R$4,50</p>
+            </div>
+        </a>
+
+
+        <!--popup que abre ao clicar na div refri 350 ml. 
+            div para selecionar refrigerante 350 ml-->
+        <div id="popUPrefri1">
+             <!--↓ botão para fechar popup ↓-->
+            <a href="javascript: fechar1();"><div id="btn-fechar">x</div></a>
+             <!--↑ botão para fechar popup ↑-->
+            <h3>selecione seu refrigerante</h3>
+            <p id="p2">coca cola <img id="img3" src="/FoodBox_2/Nova pasta (2)/refri/5a34b550cf0684.661871471513403728848.png" alt=""></p>
+            <p id="p2">fanta <img id="img3" src="/FoodBox_2/Nova pasta (2)/refri/kisspng-fanta-fizzy-drinks-diet-coke-coca-cola-juice-fanta-5ac6931aeaac34.5705116715229632269612.png" alt=""></p>
+            <p id="p2">guarana antartica <img id="img2" src="/FoodBox_2/Nova pasta (2)/refri/guarana antarctica lata 350ml png - Fundo transparente grátis (1).png" alt=""></p>
+        </div>
+
+
+        <!--div refrigerante 2l-->
+        <a href="javascript: abrir2();" >
+            <div id="bebida">
+                <img src="/FoodBox_2/Nova pasta (2)/refri2l.png" alt="">
+                <h3>Refrigerantes 2l</h3>
+                <p>refrigerante 2l, gelado <span id="gelo">&#X2744;</span> </p>
+                <p id="preço">R$11,90</p>
+            </div>
+        </a>
+
+
+        <!--popup que abre ao clicar na div refri 2l. 
+            div para selecionar refrigerante 2l-->
+        <div id="popUPrefri2">
+            <!--↓ botão para fechar popup ↓-->
+            <a href="javascript: fechar2();"><div id="btn-fechar">x</div></a>
+            <!--↑ botão para fechar popup ↑--> 
+            <h3>selecione seu refrigerante</h3>
+            <p id="p2">coca cola <img id="img2" src="/FoodBox_2/Nova pasta (2)/refri/kisspng-coca-cola-cherry-fizzy-drinks-diet-coke-coca-cola-png-transparent-images-5aadb56e74ab10.2862097115213336144779.png" alt=""></p>
+            <p id="p2">fanta <img id="img3" src="/FoodBox_2/Nova pasta (2)/refri/kisspng-fizzy-drinks-coca-cola-fanta-orange-soft-drink-fanta-5ac04ded40be84.6719859215225523012652.png" alt=""></p>
+            <p id="p2">guarana antartica <img id="img2" src="/FoodBox_2/Nova pasta (2)/refri/[46048] Refrigerante Guarana Antarctica 2l.png" alt=""></p>
+            <p id="p2">kuat <img id="img2" src="/FoodBox_2/Nova pasta (2)/refri/guarana kuat lata png - Fundo transparente grátis.png" alt=""></p>
+        </div>
+        
+        
+    </div>
+    
+</body>
+</html>

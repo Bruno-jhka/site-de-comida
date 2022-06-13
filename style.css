@@ -1,0 +1,165 @@
+*{
+    border: none;
+}
+
+/*estilo do corpo da pagina*/
+body{
+    background-color:lightgray;
+    font-family: cursive;
+    text-align: center;
+    padding: 2px  10%  ;
+}
+
+/*estilo da tag h1*/
+h1{
+
+    font-family: sans-serif;    
+}
+
+
+/*estilo da tag p*/
+p{
+    font-size: 17px;
+}
+
+a{
+    color: black;
+}
+
+/*estilo da div do titulo*/
+#titulo{
+    margin: 10px 20px 20px 20px;
+    font-style: italic;
+    color: white;
+    background-color: rgb(254, 36, 36);
+    padding:  1px;
+    border-radius: 25px 40px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.608); 
+    
+}
+
+/*estilo da div lanche*/
+#lanche{
+    background-color: rgb(255, 212, 212);
+    border-radius: 12.5px 20px;
+    text-align:start;
+    padding: 10px;
+    margin: 20px 50px;
+    display: inline-block;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.608);
+    align-items: center;
+    
+}
+
+
+/*estilo da div bebida*/
+#bebida{
+    background-color: rgb(255, 212, 212);
+    border-radius: 12.5px 20px;
+    text-align:start;
+    padding: 10px;
+    margin: 20px 50px;
+    display: inline-block;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.608);
+    align-items: center;
+}
+
+/*dimenciona a imagem*/
+
+img{
+    width: 45%;
+	border-radius: 5px; 
+    float: right;
+}
+
+/*define a fonte do preço*/
+#preço{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+/*botão adicionar sacola*/
+#add_sacola{
+    background-color: rgb(254, 36, 36);
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 15px;
+    float: right;
+    padding: 2px 5px;
+    border-radius: 5px 10px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.608);
+    
+}
+
+/* cor do emoji gelo*/
+#gelo{
+    color: rgb(0, 214, 214);
+}
+
+
+#popUPrefri1, #popUPrefri2{
+	top: 0; bottom: 0;
+	left: 0; right: 0;
+    background-color: rgb(255, 212, 212);
+    border-radius: 12.5px 20px;
+    text-align:start;
+    padding: 10px;
+    margin: 20px 50px;
+    display: none;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.608);
+    align-items: center;
+    line-height: 40px;
+    
+}
+
+#btn-fechar{
+    background-color: white;
+    font-weight: bold;
+	color: red;
+	width: 15px;
+	margin-top: -1px;
+	margin-right: -1px;
+	padding-left: 4px;
+	border-radius: 3px 6px;
+	box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.671);
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	float: right;
+    line-height: normal;
+}
+
+#img2{
+    width: 50px;
+}
+
+#img3{
+    width: 35px;
+    padding-right: 7px;
+}
+
+#p2{
+    background-color: rgb(252, 195, 195);
+    padding: 10px 2px;
+    display: flex;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.608);
+    border-radius: 6px 12px;
+    justify-content: space-between;
+}
+
+
+@keyframes popup1{
+    from{
+        opacity: 0;
+        transform: translate3d(0, -60px, 0px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translate3d(0, 0, 0px);
+    }
+
+}
+
+
+
+
